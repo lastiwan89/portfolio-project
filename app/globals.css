@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer utilities {
+  .semi-18 {
+    @apply text-[18px] font-[600] leading-[18px];
+  }
+}
