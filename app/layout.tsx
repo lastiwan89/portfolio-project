@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
+<<<<<<< HEAD
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+=======
+import { Work_Sans } from "next/font/google";
+import "./globals.css";
+import Navbar from "./components/Navbar";
+
+const worksans = Work_Sans({ subsets: ["latin"] });
+>>>>>>> feature
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,10 +26,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+<<<<<<< HEAD
       <body className={inter.className}>
         <Navbar />
         {children}
         <Footer />
+=======
+      <body className={worksans.className}>
+        <Navbar />
+        {children}
+>>>>>>> feature
       </body>
     </html>
   );
