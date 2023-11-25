@@ -3,6 +3,7 @@ import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
+/* This is my custom google fonts */
 const worksans = Work_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
