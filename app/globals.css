@@ -27,7 +27,19 @@ body {
 }
 
 @layer utilities {
+  .small-8 {
+    @apply text-[8px] font-[300] leading-normal;
+  }
   .semi-18 {
     @apply text-[18px] font-[600] leading-[18px];
+  }
+  .semi-24 {
+    @apply text-[24px] font-[600] leading-[24px];
+  }
+  .semi-32 {
+    @apply text-[32px] font-[600] leading-[32px];
+  }
+  .semi-42 {
+    @apply text-[42px] font-[600] leading-[42px];
   }
 }
