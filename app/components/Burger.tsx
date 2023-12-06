@@ -5,8 +5,9 @@ import { useState } from "react";
 
 export default function Burger() {
   const [open, setOpen] = useState<boolean>(false);
+  const handleOpen = () => setOpen((prev) => !prev);
   return (
-    <div className="relative" onClick={() => setOpen((prev) => !prev)}>
+    <div className="relative" onClick={handleOpen}>
       {!open ? (
         <Image
           src={`/icon-hamburger.svg`}
@@ -28,6 +29,7 @@ export default function Burger() {
           <Link className="semi-18 cursor-pointer" href="/about">
             About
           </Link>
+          <small className="small-8"> &copy; Japan 2023</small>
         </ul>
       )}
     </div>
